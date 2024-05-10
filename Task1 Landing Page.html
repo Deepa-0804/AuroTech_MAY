@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KURAMA_REALM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      body{
+        background:linear-gradient(rgb(252, 150, 33),rgb(245, 158, 29));
+        margin: 0%;
+        padding: 0%;
+        background-image:linear-gradient(rgba(0, 0, 1, 0.445),rgba(0, 0, 1, 0.418), );
+         background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+      }
+      ul{
+      
+      list-style-type: none;
+      overflow: hidden;
+      display: inline-flex;
+      
+}
+li{
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+  font-family: monospace;
+  font-size: 1rem;
+}
+li:hover{
+  border: 2px solid rgb(5, 2, 0);
+  box-shadow: 1px 2px 4px  rgba(77, 73, 70, 0.959);
+  background-color: rgb(250, 159, 56);
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+      
+      .img-container img{
+       background-color: black;
+        width: 100%;
+        height: 350px;
+        transition: transform 0.5s ease;
+        display: flex;
+         position: absolute;
+
+        
+      }
+      .img-container:hover img{
+        transform: scale(1.1);
+       
+      }
+      .img-container .second-img{
+         display: none;
+         
+      }
+      .img-container:hover .second-img{
+        display: block;
+        border: 4px solid rgb(240, 94, 9);
+        
+     
+      }
+      .home{
+        margin-top: 400px;
+        
+      }
+     .first{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border: 1px solid rgba(252, 129, 14, 0.651);
+        padding: 40px;
+        margin-left: 0px;
+        margin-right: 20px;
+        
+        border-radius: 15px;
+        color: aliceblue;
+        background-color: rgba(255, 68, 0, 0.466);
+        background-image:linear-gradient(rgba(0, 0, 0, 0.336),rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.404)), url("https://pre00.deviantart.net/0cf6/th/pre/f/2018/020/6/c/naruto_uzumaki_minimalist_wallpaper_by_joosherino-dc0nr2u.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        position: inherit;
+    }
+    .first:hover{
+      padding: 50px;
+      margin-right: 100px;
+      box-shadow: 5px 8px 8px orangered;
+    }
+    .second{
+       font-family: Georgia, 'Times New Roman', Times, serif;
+        border: 1px solid rgba(252, 129, 14, 0.651);
+        padding: 40px;
+       
+        margin-left:20px;
+        
+        border-radius: 15px;
+        color: aliceblue;
+        background-color: rgba(255, 68, 0, 0.466);
+        background-image:linear-gradient(rgba(0, 0, 0, 0.556),rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)), url("https://e1.pxfuel.com/desktop-wallpaper/695/544/desktop-wallpaper-naruto-orange.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        position:right;
+      
+    }
+    .second:hover{
+      padding: 50px;
+      margin-left: 100px;
+      box-shadow: 5px 8px 8px orangered;
+    }
+    .imgteam7{
+      margin-bottom: 40px;
+    }
+    
+    .kakashi{
+      position: relative;
+      width: 400px ;
+      height: 500px;
+      overflow: auto;
+      
+    }
+    .imgteam7{
+      transition: transform 0.5s;
+    }
+    .kakashi:hover .imgteam7{
+      transform: scale(1.1);
+    }
+     .sakura{
+      position: relative;
+      width: 400px ;
+      height: 500px;
+      overflow: auto;
+      
+    }
+    .imgteam7{
+      transition: transform 0.5s;
+    }
+    .sakura:hover .imgteam7{
+      transform: scale(1.1);
+    }
+    .overlay{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width:400px ;
+      height:500px ;
+      background-color: lightsalmon ;
+      color:black ;
+      transition: opacity 0.5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }
+    .kakashi:hover .overlay{
+      opacity: 1;
+      display: contents;
+      background-color: lightsalmon;
+    }
+     .sakura:hover .overlay{
+      opacity: 1;
+      display: contents;
+      background-color: lightsalmon;
+    }
+    .uchiha{
+      position: relative;
+      width: 400px ;
+      height: 500px;
+      overflow: auto;
+    }
+    .imgteam7{
+      transition: transform 0.5s;
+    }
+    .uchiha:hover .imgteam7{
+      transform: scale(1.1);
+    }
+    .uchiha:hover .overlay{
+      opacity: 1;
+      display: contents;
+      background-color: lightsalmon;
+    }
+    table{
+      margin-left: 49px;
+    }
+    footer{
+      background-color: aliceblue;
+    }
+    .star:hover{
+      color: white;
+    }
+   footer{
+    border: 2px solid white;
+    padding: 30px;
+    display: inline-block;
+    background-color: aliceblue;
+    width: 95%;
+    text-align: center;
+    margin-left: 2px;
+   }
+
+   /* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #e4405f;
+  color: white;
+}
+
+          </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <ul><li> <a href="#home"> Home</a></li><li><a href="#team7">Team_7</a></li><li><a>About</a></li></ul>
+      </nav>
+    <div class="img-container">
+    <img src="https://i.ytimg.com/vi/N5YjEn6ke3o/maxresdefault.jpg" alt="Naruto">
+    <img class="second-img" src="https://technosports.co.in/wp-content/uploads/2023/12/season-1-jpeg.webp">
+   </div></header>
+   <br>
+
+   <div class="home">
+    <p class="first">Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village. The story is told in two parts: the first is set in Naruto's pre-teen years, and the second in his teens. The series is based on two one-shot manga by Kishimoto: Karakuri (1995), which earned Kishimoto an honorable mention in Shueisha's monthly Hop Step Award the following year, and Naruto (1997).</p>
+    <br>
+    <p class="second">Naruto Uzumaki (Japanese: うずまき ナルト, Hepburn: Uzumaki Naruto)  is the titular protagonist of the manga Naruto, created by Masashi Kishimoto. He is a ninja from the fictional Hidden Leaf Village (Japanese: 木ノ葉隠れ, Hepburn: konohagakure). As a boy, Naruto is ridiculed and ostracized on account of the Nine-Tailed Demon Fox—a malevolent creature that attacked Konohagakure—that was sealed away in his body. Despite this, he aspires to become his village's leader, the Hokage, in order to receive their approval. His carefree, optimistic, and boisterous personality enables him to befriend other Konohagakure ninja, as well as ninja from other villages. Naruto appears in the series' films and in other media related to the franchise, including video games and original video animations (OVA), as well as the sequel Boruto: Naruto Next Generations, where he is the Hokage, and his son, Boruto Uzumaki, is the protagonist.
+
+    </p>
+    <br>
+    <div class="team7" id="team7">
+      <h1 style="color: aliceblue;font-size: 1.5rem;text-align: center;text-shadow: 2px 3px 5px red;">Team 7</h1><br>
+      <table>
+        <tr>
+          <td>
+      <div class="kakashi">
+       
+        <img class="imgteam7" style="width: 300px; height: 300px; margin-left: 40px;border-radius: 10px;" src="https://wallpapercave.com/wp/heLToYV.jpg" alt="Kakashi">
+        <div class="overlay">
+        <p style="background-color: whitesmoke; padding: 10px;border-radius: 15px;" class="kakashicont">Kakashi Hatake is the easygoing, smart leader of team 7, consisting of Naruto Uzumaki, Sasuke Uchiha and Sakura Haruno. Kakashi had a dark past, but is unaffected by it as an adult. He was a very vital key for Naruto's success, training him to be a great ninja. Like Sasuke, Kakashi is also a master of the Sharingan, which he gained as a present from his late friend, Obito Uchiha, and can manipulate "Lightning Blade" similar to Sasuke's Chidori. Facing Obito after learning he survived and became apprentice of Madara's, Kakashi's original eye was restored late into series's second half and briefing regaining the Sharingan when Obito aids him in spirit to help in the fight against Kaguya. Kakashi succeeds Tsunade as the Sixth Hokage after the Fourth Great Ninja War have ended, with Naruto succeeding him years later.</p></div>
+      </div></td>
+    <td>
+    <div class="uchiha">
+      <img class="imgteam7"  style="width: 300px; height: 300px; margin-left: 40px;border-radius: 10px;" src="https://th.bing.com/th/id/OIP.w6ZD5Pvzd9ufQZgmA3td2QHaGw?rs=1&pid=ImgDetMain"  alt="uchiha">
+      <div class="overlay">
+      <p style="background-color: whitesmoke; padding: 10px;border-radius: 15px;" class="uchihacont">Sasuke Uchiha (うちは サスケ, Uchiha Sasuke) is Naruto's rival and best friend. He was designed by Kishimoto as the "cool genius" since he felt this was an integral part of an ideal rivalry.[1] Sasuke's older brother, Itachi Uchiha, killed the rest of their family.[ch. 224] Because of this, Sasuke's sole desire is to kill his brother, and he develops a cold and withdrawn personality, seeing people as tools to further his goals, although also gaining the affection of most of the girls he knows, much to his annoyance. After he becomes a member of Team 7, Sasuke seems to begin considering his teammates precious to the point of risking his life to protect them, while focusing on revenge less than at the start of the series. When during the battle, Sasuke is a taijutsu expert and has mastered his ability to manipulate numerous fire techniques including known as "Fire Style: Fireball Jutsu", manipulating a fury of lightning known as "Chidori" and as a member of the Uchiha clan, he uses the Sharingan that allows him to senses the opponent's moves and attacks. Following an encounter and a subsequent defeat at the hands of his brother in Part I, however, Sasuke severs his ties and leaves the village to seek more power from Orochimaru. By the events of the Boruto franchise, Sasuke has become a vigilante investigating the Otsutsuki clan for Konohagakure and takes Boruto under his wing. Sasuke is voiced by Noriaki Sugiyama in the Japanese anime, while his English voice actor is Yuri Lowenthal.
+
+      </p>
+    </div></td>
+    <td> <div class="sakura">
+       
+        <img class="imgteam7" style="width: 300px; height: 300px; margin-right: 40px;border-radius: 10px;" src="https://i.pinimg.com/736x/c3/1d/0e/c31d0e8c9ae6b80fcdd59e612c053196--anime-sakura-sakura-haruno.jpg" alt="Sakura">
+        <div class="overlay">
+        <p style="background-color: whitesmoke; padding: 10px;border-radius: 15px;" class="sakuracont">Sakura is a young ninja who is a part of Team 7 alongside Naruto Uzumaki and Sasuke Uchiha under the leadership of their sensei Kakashi Hatake. Within Sakura resides "Inner Sakura", a manifestation of her inner emotions; in addition to comic relief, Inner Sakura represents Sakura's actual opinion on things when she outwardly displays something opposite.As Sakura has a deep infatuation for Sasuke, many of her earlier appearances are dedicated to her continued effort to win his affection. She accompanies the rest of Team 7 during all of its early missions, though she does little to contribute to the battles that take place. Sakura lacks any unique traits that would set her apart from the rest of Team 7</p></div>
+      </div></td></tr>
+    </table>
+   </div>
+
+   <br>
+   <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background-color: aliceblue;text-align:center;padding: 5px;">Watch 1st Esp</p>
+   <iframe style="margin-left: 250px; margin-bottom: 1px;border: 2px solid black;" width="853" height="480" src="https://www.youtube.com/embed/xG0PecZyFXM" title="Naruto: Season 1 | Ep 1 | Enter: Naruto Uzumaki | FULL TAMIL DUBBED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
+   <p class="star" style="margin-left: 250px;font-size: 2rem"><small> Rate Eps</small><br>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+    
+     <footer>
+      <p>Follow Us</p>
+      <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+<p> © 2024 ShinobiKurama.com</p>
+
+
+       
+     </footer>
+
+
+</body>
+</html>
